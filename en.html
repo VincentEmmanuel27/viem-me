@@ -1,40 +1,143 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Viem.me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    /* On utilise tout l'espace disponible */
     html, body {
-      height: 100%;
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
     }
 
-    /* Centrage vertical et horizontal */
     body {
       display: flex;
-      justify-content: center; /* horizontal */
-      align-items: center;     /* vertical */
-      background-color: #ffffff; /* fond blanc */
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
     }
 
-    /* Style du texte */
+    /* Language menu */
+    .language-menu {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+
+    .language-menu a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: #FF860D;
+      font-weight: bold;
+    }
+
+    /* Logo */
+    .logo {
+      max-width: 160px;
+      margin-bottom: 30px;
+    }
+
     h1 {
       color: #FF860D;
-      font-size: 6rem; /* très grand */
-      margin: 0;
+      font-size: 3.5rem;
+      margin: 0 0 40px 0;
+    }
+
+    .manifesto {
+      max-width: 720px;
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+
+    .manifesto p {
+      margin: 28px 0;
+    }
+
+    .link-section {
+      margin-top: 60px;
+      font-size: 1.1rem;
+    }
+
+    .link-section a {
+      color: #FF860D;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 90px;
+      font-size: 0.9rem;
+      color: #666666;
     }
   </style>
 </head>
-<body>
-<!-- Menu de langues -->
-<div style="position: absolute; top: 20px; right: 20px;">
-  <a href="index.html" style="margin: 0 10px; text-decoration: none; color: #FF860D;">FR</a>
-  <a href="en.html" style="margin: 0 10px; text-decoration: none; color: #FF860D;">EN</a>
-  <a href="es.html" style="margin: 0 10px; text-decoration: none; color: #FF860D;">ES</a>
-</div>
 
-  <h1>Viem.me (en)</h1>
+<body>
+
+  <!-- Language menu -->
+  <div class="language-menu">
+    <a href="index.html">FR</a>
+    <a href="en.html">EN</a>
+    <a href="es.html">ES</a>
+  </div>
+
+  <!-- Logo -->
+  <img src="logo_seul_fond_transparent.png" alt="Viem.me logo" class="logo">
+
+  <!-- Name -->
+  <h1>Viem.me</h1>
+
+  <!-- Manifesto -->
+  <div class="manifesto">
+    <p>
+      Life is movement.
+    </p>
+
+    <p>
+      When this movement flows freely,  
+      the body knows,  
+      cells open,  
+      and vitality expresses itself naturally.
+    </p>
+
+    <p>
+      Viem.me is a space dedicated  
+      to the direct experience of this living movement,  
+      at the heart of the body,  
+      at a cellular level.
+    </p>
+
+    <p>
+      <strong>
+        Opening to life  
+        means offering it the conditions to rediscover its movement of expansion,  
+        and allowing the body to support that impulse.
+      </strong>
+    </p>
+  </div>
+
+  <!-- Link to Liberación du Péricarde -->
+  <div class="link-section">
+    <p>
+      To explore a concrete pathway of practice:
+    </p>
+    <p>
+      <a href="https://www.liberationdupericarde.org" target="_blank">
+        liberationdupericarde.org
+      </a>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Viem.me
+  </footer>
+
 </body>
 </html>
